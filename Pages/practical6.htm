@@ -1,75 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical 6</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-6</title>
     <style>
-        .container {
-            
-            display: flex;
-            flex-direction: row;
-        }
+      body {
+        background-color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .box {
+        width: 20%;
+        float: left;
+        margin: 20px 15px;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 8px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+      }
+      .box > img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      .box > h4 {
+        margin: 0px 10px;
+        text-align: center;
+      }
+      .box > p {
+        margin: 10px;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 25px;
+      }
+      .box > a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        background-color: red;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      .box a:hover {
+        background-color: blue;
+      }
     </style>
-</head>
+  </head>
+  <body>
+    <h1 style="color: #fff; text-align: center; text-transform: uppercase; font-size: 1.5rem;">
+      Practical-6: Create following layout using CSS Layout Properties.
+    </h1>
+    <div class="box">
+      <img src="../Images/html.png" alt="" />
+      <h4>Introduction to HTML</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+        illum odio! Aperiam esse quia blanditiis quasi? Cum itaque recusandae
+        consequuntur!
+      </p>
 
-<body>
-    <div class="container">
-        <div class="card" id="html">
-            <img src="../Images/html.png">
-            <h2>Introduction To HTML</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quia. Rem soluta odio, nulla accusamus
-                consequuntur facere nisi cumque in qui, eaque labore amet dolore voluptas temporibus? Libero aliquam
-                numquam deleniti necessitatibus, consectetur pariatur repellendus, repellat optio nemo itaque voluptatum
-                error omnis. Quam, at cum molestias ex provident sunt corporis ullam, libero, exercitationem
-                necessitatibus placeat culpa facere nesciunt. Eaque illum voluptate natus odit beatae ipsum eligendi
-                accusamus ut recusandae obcaecati reiciendis, aliquid qui fugit, illo unde deleniti expedita quo.
-                Possimus rerum veniam accusamus saepe omnis illum inventore vel deserunt laborum quibusdam quasi esse
-                blanditiis dolorum beatae voluptatem sapiente, obcaecati animi?
-            </p>
-            <button></button>
-        </div>
-        <div class="card" id="css">
-            <img src="../Images/css.png">
-            <h2>Introduction To CSS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a ratione voluptatum magni ut. Ratione ea
-                nobis quos recusandae sapiente, eaque blanditiis magni pariatur, voluptate beatae, dicta ad in sit
-                debitis cum sint rem ullam doloremque eveniet? Est iusto dolorem enim rerum deleniti voluptates id
-                delectus inventore. Voluptate possimus corrupti, alias asperiores dolore reiciendis nobis sequi
-                molestias, id veritatis vel debitis. Molestiae, expedita voluptas alias odit libero repellendus,
-                possimus aspernatur adipisci assumenda eius mollitia commodi magni facere laboriosam fugit, id
-                reiciendis illo! Necessitatibus, sunt? Iusto mollitia amet quis placeat repudiandae, laborum pariatur,
-                quisquam praesentium reprehenderit beatae impedit, perferendis dicta asperiores.
-            </p>
-        </div>
-        <div class="card" id="jquery">
-            <img src="../Images/jquery.png">
-            <h2>Introduction To jQuery</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eaque fugiat enim fuga molestiae
-                voluptates totam, autem minima, repudiandae ad nesciunt eos? Nemo, amet quos? Sit iure error blanditiis
-                nesciunt tempora dolores quod! Incidunt eligendi deserunt quaerat voluptatem facere, quae magni ipsum
-                quidem rem neque dignissimos nulla, impedit assumenda tempora? Laboriosam consequuntur natus laborum,
-                error deserunt neque cupiditate ullam est labore tenetur exercitationem minima quaerat corrupti
-                explicabo qui molestias sunt aut! Culpa, maxime expedita ipsa pariatur voluptatem earum magni officia
-                molestiae! Cum exercitationem enim nisi impedit culpa fugit molestiae illo, esse expedita dicta tempore
-                perferendis veniam mollitia, fugiat blanditiis iste.
-            </p>
-        </div>
-        <div class="card" id="bootstrap">
-            <img src="../Images/bootstrap.jpg">
-            <h2>Introduction To BootStrap</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus nihil fugit fugiat reprehenderit
-                voluptatibus sapiente neque qui a magnam! Rerum iusto magnam esse incidunt eos cupiditate corrupti id
-                adipisci. Commodi earum labore dolorem iure? Inventore a, explicabo libero aut dolor minima minus et est
-                atque, ullam cum non corporis possimus laudantium maxime mollitia quasi rerum. Eaque delectus molestias
-                nihil perspiciatis vel asperiores sapiente molestiae possimus beatae mollitia nobis temporibus, quam ut
-                cumque quas facilis maxime reiciendis incidunt perferendis at officia odit in harum? Vitae pariatur
-                dolore libero, at corrupti delectus dicta quasi amet! Dolor aut saepe iste in est nam!
-            </p>
-        </div>
+      <a href="https://google.com">Read More</a>
     </div>
-</body>
+    <div class="box">
+      <img src="../Images/css.png" alt="" />
+      <h4>Introduction to CSS</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+        illum odio! Aperiam esse quia blanditiis quasi? Cum itaque recusandae
+        consequuntur!
+      </p>
 
+      <a href="https://google.com">Read More</a>
+    </div>
+    <div class="box">
+      <img src="../Images/jquery.png" alt="" />
+      <h4>Introduction to JavaScript</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+        illum odio! Aperiam esse quia blanditiis quasi? Cum itaque recusandae
+        consequuntur!
+      </p>
+
+      <a href="practical-5-jq.html">Read More</a>
+    </div>
+    <div class="box">
+      <img src="../Images/bootstrap.jpg" alt="" />
+      <h4>Introduction to Bootstrap</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+        illum odio! Aperiam esse quia blanditiis quasi? Cum itaque recusandae
+        consequuntur!
+      </p>
+
+      <a href="https://google.com">Read More</a>
+    </div>
+  </body>
 </html>
