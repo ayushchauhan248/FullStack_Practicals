@@ -1,1 +1,1 @@
-# FullStack_Practicals
+This is just my assignment
