@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #535353;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        p {
+            font-size: large;
+        }
+
+        button {
+            background-color: chartreuse;
+            margin: 15px;
+            border-radius: 5px;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center">COUNTER</h1>
+    <div class="container">
+        <button id="first" onclick="increase()">+</button>
+        <p id="count">1</p>
+        <button id="second" onclick="decrease()">-</button>
+    </div>
+    <script>
+        var counter = 1;
+        function increase() {
+            counter++;
+            var p = document.getElementById("count");
+            p.innerHTML = counter;
+        }
+        function decrease() {
+            if (counter > 0) {
+                var p = document.getElementById("count");
+
+                p.innerHTML = counter;
+                counter--;
+            } else if (counter == 0) {
+                counter--;
+                var p = document.getElementById("count");
+                p.innerHTML = 0;
+                disablebtn();
+            }
+        }
+        function disablebtn() {
+            document.getElementById("first").disabled = true;
+            document.getElementById("second").disabled = true;
+        }
+    </script>
+</body>
+
+</html>
